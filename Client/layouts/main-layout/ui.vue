@@ -2,7 +2,7 @@
 
 <template>
 	<main>
-		<h1>Main layout</h1>
+		<h1 class="visually-hidden">Company Skilled home page</h1>
 		<slot />
 	</main>
 </template>
