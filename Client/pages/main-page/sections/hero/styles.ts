@@ -82,13 +82,14 @@ export const statisticsFieldValue = css({
 });
 
 export const statisticsHours = css({
-	top: "17.7rem",
-	left: "-4.7rem"
+	bottom: "-2.4rem",
+	left: "-3.7rem",
+	minWidth: "15.5rem"
 });
 
 export const statisticsMembers = css({
-	top: "-2.4rem",
-	right: "-4.7rem"
+	top: "-3.8rem",
+	right: "-3.8rem"
 });
 
 export const container = css({
