@@ -1,6 +1,8 @@
 import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
+	// Whether to use css reset
+	preflight: true,
 	// Where to look for your css declarations
 	include: [
 		"./app/**/*.{js,ts,vue}",
@@ -15,7 +17,13 @@ export default defineConfig({
 
 	// Useful for theme customization
 	theme: {
-		extend: {}
+		extend: {
+			breakpoints: {
+				sm: "375px",
+				md: "768px",
+				lg: "1440px"
+			}
+		}
 	},
 
 	// The output directory for your css system

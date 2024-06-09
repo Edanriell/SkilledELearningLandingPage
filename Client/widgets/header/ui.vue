@@ -1,5 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+	import { button, container, header, logotype } from "./styles";
+</script>
 
-<template></template>
-
-<style scoped></style>
+<template>
+	<header :class="header">
+		<div :class="container">
+			<span :class="logotype">skilled</span>
+			<button :class="button">Get Started</button>
+		</div>
+	</header>
+</template>
