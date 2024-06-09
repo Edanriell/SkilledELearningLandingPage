@@ -1,5 +1,13 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+	import { logotype } from "./styles";
 
-<template></template>
+	const props = defineProps<{
+		textColor: "dark" | "light";
+	}>();
+</script>
 
-<style scoped></style>
+<template>
+	<span :class="logotype({ textColor: props.textColor })">
+		<slot />
+	</span>
+</template>
