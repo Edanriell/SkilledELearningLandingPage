@@ -12,11 +12,17 @@
 	definePageMeta({
 		layout: "main-layout-ui"
 	});
+
+	const styles = css({
+		backgroundColor: "gainsboro",
+		borderRadius: "9999px",
+		fontSize: "13px",
+		padding: "10px 15px"
+	});
 </script>
 
 <template>
-	<h1 :class="css({ fontSize: '5xl', fontWeight: 'bold', color: 'red', backgroundColor: 'red' })">
-		This is a title
-	</h1>
+	<h1>This is a title</h1>
+	<h3 :class="styles">TEST</h3>
 	<MainPage />
 </template>

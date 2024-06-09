@@ -1,20 +1,15 @@
 import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
-	// Whether to use css reset
-	preflight: true,
-
 	// Where to look for your css declarations
 	include: [
-		"./app/**/*.{js,jsx,ts,tsx}",
-		"./layouts/**/*.{js,jsx,ts,tsx}",
-		"./pages/**/*.{js,jsx,ts,tsx}",
-		"./routes/**/*.{js,jsx,ts,tsx}",
-		"./shared/**/*.{js,jsx,ts,tsx}",
-		"./widgets/**/*.{js,jsx,ts,tsx}"
+		"./app/**/*.{js,ts,vue}",
+		"./layouts/**/*.{js,ts,vue}",
+		"./pages/**/*.{js,ts,vue}",
+		"./routes/**/*.{js,ts,vue}",
+		"./shared/**/*.{js,ts,vue}",
+		"./widgets/**/*.{js,ts,vue}"
 	],
-	// syntax: "template-literal",
-	// jsxFramework: "vue",
 	// Files to exclude
 	exclude: [],
 
