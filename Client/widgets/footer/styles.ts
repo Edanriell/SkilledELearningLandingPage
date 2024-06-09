@@ -18,18 +18,6 @@ export const container = css({
 	}
 });
 
-export const logotype = css({
-	fontFamily: "var(--font-family)",
-	fontWeight: "800",
-	fontSize: "2.8rem",
-	// Only white color
-	color: "var(--ffffff)",
-	textTransform: "lowercase",
-	lg: {
-		fontSize: "3.6rem"
-	}
-});
-
 export const button = css({
 	// Only background
 	background: "linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)",

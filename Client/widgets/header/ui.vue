@@ -1,11 +1,13 @@
 <script lang="ts" setup>
-	import { button, container, header, logotype } from "./styles";
+	import { Logotype } from "@shared/ui";
+
+	import { button, container, header } from "./styles";
 </script>
 
 <template>
 	<header :class="header">
 		<div :class="container">
-			<span :class="logotype">skilled</span>
+			<Logotype text-color="dark">skilled</Logotype>
 			<button :class="button" type="button">Get Started</button>
 		</div>
 	</header>
