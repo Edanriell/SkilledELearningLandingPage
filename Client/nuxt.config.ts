@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 		"styled-system": resolve("./styled-system")
 	},
 	modules: ["@nuxt/eslint"],
-	css: ["@/app/styles/styles.css"],
+	css: ["@/app/styles/styles.css", "@/app/styles/base.less"],
 	postcss: {
 		plugins: {
 			"@pandacss/dev/postcss": {}
@@ -24,3 +24,7 @@ export default defineNuxtConfig({
 		pages: "routes"
 	}
 });
+
+// 375
+// 768
+// 1440

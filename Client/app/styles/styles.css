@@ -1,28 +1,12 @@
-@import "sanitize.css";
-@import "sanitize.css/forms.css";
-@import "sanitize.css/typography.css";
-
 @layer reset, base, tokens, recipes, utilities;
 
-html {
-	font-size: 62.5%;
-	scroll-behavior: smooth;
-}
+:root {
+	--666ca3: #666ca3;
+	--13183f: #13183f;
+	--83869a: #83869a;
+	--f74780: #f74780;
+	--ffa7c3: #ffa7c3;
+	--ffffff: #fff;
 
-* {
-	padding: 0;
-	margin: 0;
-}
-
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+	--font-family: "Plus Jakarta Sans";
 }
