@@ -1,4 +1,9 @@
-declare module "@features";
+declare module "@app";
+declare module "@layouts";
 declare module "@pages";
+declare module "@routes";
 declare module "@shared";
-declare module "@shared/ui";
+declare module "@widgets";
+declare module "@widgets/header";
+declare module "@styled-system";
+declare module "@styled-system/css";

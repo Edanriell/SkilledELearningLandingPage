@@ -7,14 +7,16 @@ const { resolve } = createResolver(import.meta.url);
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	alias: {
-		"@features": fileURLToPath(new URL("./features", import.meta.url)),
+		"@app": fileURLToPath(new URL("./app", import.meta.url)),
+		"@layouts": fileURLToPath(new URL("./layouts", import.meta.url)),
 		"@pages": fileURLToPath(new URL("./pages", import.meta.url)),
+		"@routes": fileURLToPath(new URL("./routes", import.meta.url)),
 		"@shared": fileURLToPath(new URL("./shared", import.meta.url)),
-		"@shared/ui": fileURLToPath(new URL("./shared/ui", import.meta.url)),
-		"styled-system": resolve("./styled-system")
+		"@widgets": fileURLToPath(new URL("./widgets", import.meta.url)),
+		"@styled-system": resolve("./styled-system")
 	},
 	modules: ["@nuxt/eslint"],
-	css: ["@/app/styles/styles.css", "@/app/styles/base.less"],
+	css: ["@/app/styles/base.less", "@/app/styles/styles.css"],
 	postcss: {
 		plugins: {
 			"@pandacss/dev/postcss": {}
