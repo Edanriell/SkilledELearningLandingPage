@@ -3,7 +3,7 @@ import { css } from "@styled-system/css";
 export const hero = css({
 	backgroundColor: "var(--ffffff)",
 	paddingTop: "2.2rem",
-	paddingBottom: "6.6rem"
+	paddingBottom: "9rem"
 });
 
 export const heroContent = css({
@@ -53,7 +53,11 @@ export const heroImage = css({
 	background: "linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)",
 	objectFit: "cover",
 	overflow: "hidden",
-	textAlign: "center"
+	textAlign: "center",
+	paddingTop: "1.6rem",
+	display: "flex",
+	alignItems: "center",
+	justifyContent: "center"
 });
 
 export const statistics = css({
@@ -82,7 +86,7 @@ export const statisticsFieldValue = css({
 });
 
 export const statisticsHours = css({
-	bottom: "-2.4rem",
+	top: "17.7rem",
 	left: "-3.7rem",
 	minWidth: "15.5rem"
 });
