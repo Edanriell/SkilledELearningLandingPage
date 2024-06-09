@@ -1,3 +1,7 @@
-<script lang="ts"></script>
+<script lang="ts" setup>
+	import { Hero } from "./sections";
+</script>
 
-<template></template>
+<template>
+	<Hero />
+</template>

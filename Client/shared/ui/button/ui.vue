@@ -1,5 +1,13 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+	import { button } from "./styles";
 
-<template></template>
+	const props = defineProps<{
+		backgroundColor: "dark" | "gradientDark" | "gradientLight";
+	}>();
+</script>
 
-<style scoped></style>
+<template>
+	<button :class="button({ backgroundColor: props.backgroundColor })" type="button">
+		<slot />
+	</button>
+</template>
