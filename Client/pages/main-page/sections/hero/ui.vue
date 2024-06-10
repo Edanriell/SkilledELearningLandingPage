@@ -8,6 +8,7 @@
 		heroImage,
 		heroImageContainer,
 		heroStatistics,
+		heroStatisticsImage,
 		heroText,
 		heroTitle,
 		statistics,
@@ -31,21 +32,31 @@
 			</div>
 		</div>
 		<div :class="heroStatistics">
-			<div :class="heroImageContainer">
-				<picture>
-					<source
-						media="(min-width: 1440px)"
-						srcset="/images/woman-image-lg.png"
-						type="image/png"
-					/>
-					<source media="(min-width: 768px)" srcset="/images/woman-image-md.png" type="image/png" />
-					<source media="(min-width: 375px)" srcset="/images/woman-image-sm.png" type="image/png" />
-					<img
-						:class="heroImage"
-						alt="Image of a woman drinking coffee"
-						src="/images/woman-image-sm.png"
-					/>
-				</picture>
+			<div :class="heroStatisticsImage">
+				<div :class="heroImageContainer">
+					<picture>
+						<source
+							media="(min-width: 1440px)"
+							srcset="/images/woman-image-lg.png"
+							type="image/png"
+						/>
+						<source
+							media="(min-width: 768px)"
+							srcset="/images/woman-image-md.png"
+							type="image/png"
+						/>
+						<source
+							media="(min-width: 375px)"
+							srcset="/images/woman-image-sm.png"
+							type="image/png"
+						/>
+						<img
+							:class="heroImage"
+							alt="Image of a woman drinking coffee"
+							src="/images/woman-image-sm.png"
+						/>
+					</picture>
+				</div>
 				<dl :class="statistics + ' ' + statisticsMembers">
 					<dt :class="statisticsFieldName">Members</dt>
 					<dd :class="statisticsFieldValue">29k</dd>

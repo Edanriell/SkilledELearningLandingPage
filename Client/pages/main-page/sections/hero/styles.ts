@@ -38,7 +38,7 @@ export const heroStatistics = css({
 	position: "relative"
 });
 
-export const heroImageContainer = css({
+export const heroStatisticsImage = css({
 	position: "relative",
 	display: "block",
 	margin: "0 auto",
@@ -46,18 +46,20 @@ export const heroImageContainer = css({
 	height: "25.3rem"
 });
 
-export const heroImage = css({
+export const heroImageContainer = css({
+	position: "relative",
+	borderRadius: "15.8rem",
 	width: "25.3rem",
 	height: "25.3rem",
-	borderRadius: "15.8rem",
-	background: "linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)",
-	objectFit: "cover",
 	overflow: "hidden",
-	textAlign: "center",
-	paddingTop: "1.6rem",
-	display: "flex",
-	alignItems: "center",
-	justifyContent: "center"
+	background: "linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)"
+});
+
+export const heroImage = css({
+	width: "100%",
+	height: "100%",
+	objectFit: "cover",
+	paddingTop: "1.6rem"
 });
 
 export const statistics = css({
