@@ -1,7 +1,7 @@
 import { css } from "@styled-system/css";
 
 export const header = css({
-	backgroundColor: "var(--ffffff)"
+	backgroundColor: "transparent"
 });
 
 export const container = css({

@@ -4,6 +4,8 @@ export const hero = css({
 	backgroundColor: "var(--ffffff)",
 	paddingTop: "2.2rem",
 	paddingBottom: "9rem",
+	position: "relative",
+	zIndex: "-1",
 	md: {
 		paddingTop: "2.6rem",
 		paddingBottom: "13.7rem",
@@ -143,6 +145,7 @@ export const decorativeImage = css({
 	display: "none",
 	position: "absolute",
 	zIndex: "-1",
+	pointerEvents: "none",
 	md: {
 		display: "block",
 		top: "-17.2rem",
