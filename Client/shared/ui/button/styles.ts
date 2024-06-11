@@ -42,6 +42,11 @@ export const button = cva({
 				lg: {
 					padding: "1.6rem 3.2rem 1.9rem 3.2rem"
 				}
+			},
+			basic: {
+				fontSize: "1.8rem",
+				lineHeight: "156%",
+				color: "var(--f74780)"
 			}
 		}
 	}
