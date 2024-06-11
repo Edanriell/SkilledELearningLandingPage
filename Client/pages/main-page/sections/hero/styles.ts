@@ -5,12 +5,16 @@ export const hero = css({
 	paddingTop: "2.2rem",
 	paddingBottom: "9rem",
 	position: "relative",
-	zIndex: "-1",
+	zIndex: "1",
 	md: {
 		paddingTop: "2.6rem",
 		paddingBottom: "13.7rem",
 		display: "flex",
 		flexDirection: "row"
+	},
+	lg: {
+		paddingTop: "6.3rem",
+		paddingBottom: "11rem"
 	}
 });
 
@@ -23,6 +27,10 @@ export const heroContent = css({
 		paddingLeft: "4rem",
 		paddingRight: "3.3rem",
 		marginBottom: "unset"
+	},
+	lg: {
+		paddingLeft: "16.5rem",
+		paddingRight: "28.2rem"
 	}
 });
 
@@ -34,6 +42,10 @@ export const heroTitle = css({
 	marginBottom: "2.6rem",
 	md: {
 		marginBottom: "2.5rem"
+	},
+	lg: {
+		fontSize: "5.6rem",
+		marginBottom: "2.9rem"
 	}
 });
 
@@ -46,6 +58,11 @@ export const heroText = css({
 	marginBottom: "2.4rem",
 	md: {
 		textAlign: "left"
+	},
+	lg: {
+		fontSize: "1.8rem",
+		lineHeight: "156%",
+		marginBottom: "4rem"
 	}
 });
 
@@ -57,6 +74,9 @@ export const heroStatistics = css({
 	position: "relative",
 	md: {
 		marginRight: "8.1rem"
+	},
+	lg: {
+		marginRight: "21.9rem"
 	}
 });
 
@@ -71,6 +91,10 @@ export const heroStatisticsImage = css({
 		margin: "unset",
 		width: "21.6rem",
 		height: "38.2rem"
+	},
+	lg: {
+		width: "31.7rem",
+		height: "56rem"
 	}
 });
 
@@ -84,6 +108,10 @@ export const heroImageContainer = css({
 	md: {
 		width: "21.6rem",
 		height: "38.2rem"
+	},
+	lg: {
+		width: "31.7rem",
+		height: "56rem"
 	}
 });
 
@@ -94,6 +122,9 @@ export const heroImage = css({
 	paddingTop: "1.6rem",
 	md: {
 		paddingTop: "5.2rem"
+	},
+	lg: {
+		paddingTop: "7.7rem"
 	}
 });
 
@@ -104,7 +135,13 @@ export const statistics = css({
 	borderRadius: "1rem",
 	boxShadow: "0 34px 54px 0 rgba(6, 22, 141, 0.16)",
 	background: "var(--ffffff)",
-	position: "absolute"
+	position: "absolute",
+	md: {
+		borderRadius: "1.5rem"
+	},
+	lg: {
+		padding: "2rem 2.4rem"
+	}
 });
 
 export const statisticsFieldName = css({
@@ -112,14 +149,21 @@ export const statisticsFieldName = css({
 	fontWeight: "700",
 	fontSize: "1.4rem",
 	lineHeight: "200%",
-	color: "var(--83869a)"
+	color: "var(--83869a)",
+	lg: {
+		fontSize: "1.6rem",
+		lineHeight: "175%"
+	}
 });
 
 export const statisticsFieldValue = css({
 	fontFamily: "var(--font-family)",
 	fontWeight: "800",
 	fontSize: "3.2rem",
-	color: "var(--13183f)"
+	color: "var(--13183f)",
+	lg: {
+		fontSize: "4rem"
+	}
 });
 
 export const statisticsHours = css({
@@ -129,6 +173,11 @@ export const statisticsHours = css({
 	md: {
 		top: "32rem",
 		left: "-4.5rem"
+	},
+	lg: {
+		top: "34.1rem",
+		left: "-12.2rem",
+		minWidth: "19.9rem"
 	}
 });
 
@@ -138,10 +187,15 @@ export const statisticsMembers = css({
 	md: {
 		top: "-1.4rem",
 		right: "-5.8rem"
+	},
+	lg: {
+		top: "10.3rem",
+		right: "-12.8rem",
+		minWidth: "15.5rem"
 	}
 });
 
-export const decorativeImage = css({
+export const decorativeImageMedium = css({
 	display: "none",
 	position: "absolute",
 	zIndex: "-1",
@@ -150,19 +204,20 @@ export const decorativeImage = css({
 		display: "block",
 		top: "-17.2rem",
 		left: "0"
+	},
+	lg: {
+		display: "none"
 	}
 });
 
-export const container = css({
-	padding: "1.6rem 1.6rem",
-	display: "flex",
-	flexDirection: "row",
-	alignItems: "center",
-	justifyContent: "space-between",
-	md: {
-		padding: "2.4rem 4rem"
-	},
+export const decorativeImageLarge = css({
+	display: "none",
+	position: "absolute",
+	zIndex: "-1",
+	pointerEvents: "none",
 	lg: {
-		padding: "2.4rem 16.5rem"
+		display: "block",
+		top: "-24.8rem",
+		left: "0"
 	}
 });

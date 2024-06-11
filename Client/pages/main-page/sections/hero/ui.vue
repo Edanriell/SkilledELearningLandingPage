@@ -2,7 +2,8 @@
 	import { Button } from "@shared/ui";
 
 	import {
-		decorativeImage,
+		decorativeImageLarge,
+		decorativeImageMedium,
 		hero,
 		heroButtonContainer,
 		heroContent,
@@ -67,7 +68,7 @@
 					<dd :class="statisticsFieldValue">1,451</dd>
 				</dl>
 				<svg
-					:class="decorativeImage"
+					:class="decorativeImageMedium"
 					fill="none"
 					height="552"
 					viewBox="0 0 552 552"
@@ -88,6 +89,37 @@
 							x2="-44"
 							y1="-44"
 							y2="442.883"
+						>
+							<stop stop-color="#4851FF" />
+							<stop offset="1" stop-color="#F02AA6" />
+						</linearGradient>
+					</defs>
+				</svg>
+				<svg
+					:class="decorativeImageLarge"
+					fill="none"
+					height="807"
+					viewBox="0 0 807 807"
+					width="807"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<rect
+						fill="url(#paint0_linear_0_540)"
+						height="1008"
+						rx="158.5"
+						transform="rotate(45 647.764 -65)"
+						width="317"
+						x="647.764"
+						y="-65"
+					/>
+					<defs>
+						<linearGradient
+							id="paint0_linear_0_540"
+							gradientUnits="userSpaceOnUse"
+							x1="647.764"
+							x2="647.764"
+							y1="-65"
+							y2="943"
 						>
 							<stop stop-color="#4851FF" />
 							<stop offset="1" stop-color="#F02AA6" />
