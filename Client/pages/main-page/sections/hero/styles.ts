@@ -14,7 +14,8 @@ export const hero = css({
 	},
 	lg: {
 		paddingTop: "6.3rem",
-		paddingBottom: "13.4rem"
+		paddingBottom: "13.4rem",
+		justifyContent: "space-between"
 	}
 });
 

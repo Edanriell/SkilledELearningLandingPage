@@ -48,7 +48,8 @@ export const CategoryTitleCard = css({
 		minWidth: "33rem"
 	},
 	lg: {
-		padding: "6.4rem 3.2rem 13.8rem 3.2rem"
+		padding: "6.4rem 3.2rem auto 3.2rem",
+		minHeight: "32.2rem"
 	}
 });
 
