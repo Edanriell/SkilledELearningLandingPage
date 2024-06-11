@@ -1,20 +1,21 @@
 import { css } from "@styled-system/css";
 
 export const hero = css({
-	backgroundColor: "var(--ffffff)",
+	backgroundColor: "transparent",
 	paddingTop: "2.2rem",
 	paddingBottom: "9rem",
 	position: "relative",
 	zIndex: "1",
 	md: {
 		paddingTop: "2.6rem",
-		paddingBottom: "13.7rem",
+		paddingBottom: "16.1rem",
 		display: "flex",
 		flexDirection: "row"
 	},
 	lg: {
 		paddingTop: "6.3rem",
-		paddingBottom: "11rem"
+		paddingBottom: "13.4rem",
+		justifyContent: "space-between"
 	}
 });
 
@@ -30,7 +31,7 @@ export const heroContent = css({
 	},
 	lg: {
 		paddingLeft: "16.5rem",
-		paddingRight: "28.2rem"
+		paddingRight: "27rem"
 	}
 });
 
@@ -62,7 +63,8 @@ export const heroText = css({
 	lg: {
 		fontSize: "1.8rem",
 		lineHeight: "156%",
-		marginBottom: "4rem"
+		marginBottom: "4rem",
+		paddingRight: "1rem"
 	}
 });
 
