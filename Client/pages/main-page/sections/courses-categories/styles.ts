@@ -21,6 +21,13 @@ export const CoursesCategoriesList = css({
 		columnGap: "1rem",
 		alignItems: "center",
 		justifyContent: "center"
+	},
+	lg: {
+		paddingLeft: "16.5rem",
+		paddingRight: "16.5rem",
+		paddingBottom: "14rem",
+		rowGap: "8rem",
+		columnGap: "3rem"
 	}
 });
 
@@ -39,6 +46,9 @@ export const CategoryTitleCard = css({
 		padding: "5.6rem 3.2rem 13.9rem 3.2rem",
 		width: "100%",
 		minWidth: "33rem"
+	},
+	lg: {
+		padding: "6.4rem 3.2rem 13.8rem 3.2rem"
 	}
 });
 
@@ -47,7 +57,11 @@ export const CategoryMainTitle = css({
 	fontWeight: "800",
 	fontSize: "2.4rem",
 	lineHeight: "133%",
-	color: "var(--ffffff)"
+	color: "var(--ffffff)",
+	lg: {
+		fontSize: "3.2rem",
+		lineHeight: "125%"
+	}
 });
 
 export const CategoryCard = css({
@@ -63,6 +77,10 @@ export const CategoryCard = css({
 		padding: "5.6rem 2.2rem 3.2rem 3.2rem",
 		width: "100%",
 		minWidth: "33rem"
+	},
+	lg: {
+		padding: "6.4rem 3.2rem 4rem 3.2rem",
+		minHeight: "32.2rem"
 	}
 });
 
@@ -87,7 +105,11 @@ export const CategoryCardSubtitle = css({
 	fontWeight: "800",
 	fontSize: "2rem",
 	color: "var(--13183f)",
-	marginBottom: "1.6rem"
+	marginBottom: "1.6rem",
+	lg: {
+		fontSize: "2.4rem",
+		marginBottom: "2.4rem"
+	}
 });
 
 export const CategoryCardText = css({
@@ -97,7 +119,12 @@ export const CategoryCardText = css({
 	lineHeight: "162%",
 	color: "var(--83869a)",
 	marginBottom: "2.4rem",
-	textAlign: "left"
+	textAlign: "left",
+	lg: {
+		fontSize: "1.8rem",
+		lineHeight: "156%",
+		marginBottom: "auto"
+	}
 });
 
 export const CategoryCardButton = css({
