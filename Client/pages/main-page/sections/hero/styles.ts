@@ -30,7 +30,7 @@ export const heroContent = css({
 	},
 	lg: {
 		paddingLeft: "16.5rem",
-		paddingRight: "28.2rem"
+		paddingRight: "27rem"
 	}
 });
 
@@ -62,7 +62,8 @@ export const heroText = css({
 	lg: {
 		fontSize: "1.8rem",
 		lineHeight: "156%",
-		marginBottom: "4rem"
+		marginBottom: "4rem",
+		paddingRight: "1rem"
 	}
 });
 
