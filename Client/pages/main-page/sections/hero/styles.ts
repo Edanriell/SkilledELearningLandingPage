@@ -27,11 +27,13 @@ export const heroContent = css({
 	md: {
 		paddingLeft: "4rem",
 		paddingRight: "3.3rem",
-		marginBottom: "unset"
+		marginBottom: "unset",
+		marginTop: "4.9rem"
 	},
 	lg: {
 		paddingLeft: "16.5rem",
-		paddingRight: "27rem"
+		paddingRight: "26.6rem",
+		marginTop: "8.5rem"
 	}
 });
 
