@@ -1,7 +1,8 @@
 <script lang="ts" setup>
+	import { Button } from "@shared/ui";
+
 	import {
 		CategoryCard,
-		CategoryCardButton,
 		CategoryCardIcon,
 		CategoryCardSubtitle,
 		CategoryCardText,
@@ -44,7 +45,7 @@
 						Learn the latest animation techniques to create stunning motion design and captivate
 						your audience.
 					</p>
-					<button :class="CategoryCardButton" type="button">Get Started</button>
+					<Button background-color="basic">Get Started</Button>
 				</article>
 			</li>
 			<li :class="CoursesCategoriesListItem">
@@ -86,7 +87,7 @@
 					<p :class="CategoryCardText">
 						Create beautiful, usable interfaces to help shape the future of how the web looks.
 					</p>
-					<button :class="CategoryCardButton" type="button">Get Started</button>
+					<Button background-color="basic">Get Started</Button>
 				</article>
 			</li>
 			<li :class="CoursesCategoriesListItem">
@@ -112,7 +113,7 @@
 						Explore critical fundamentals like lighting, composition, and focus to capture
 						exceptional photos.
 					</p>
-					<button :class="CategoryCardButton" type="button">Get Started</button>
+					<Button background-color="basic">Get Started</Button>
 				</article>
 			</li>
 			<li :class="CoursesCategoriesListItem">
@@ -138,7 +139,7 @@
 						All you need to know to get started investing in crypto. Go from beginner to advanced
 						with this 54 hour course.
 					</p>
-					<button :class="CategoryCardButton" type="button">Get Started</button>
+					<Button background-color="basic">Get Started</Button>
 				</article>
 			</li>
 			<li :class="CoursesCategoriesListItem">
@@ -164,7 +165,7 @@
 						A step-by-step playbook to help you start, scale, and sustain your business without
 						outside investment.
 					</p>
-					<button :class="CategoryCardButton" type="button">Get Started</button>
+					<Button background-color="basic">Get Started</Button>
 				</article>
 			</li>
 		</ul>

@@ -2,7 +2,7 @@
 	import { button } from "./styles";
 
 	const props = defineProps<{
-		backgroundColor: "dark" | "gradientDark" | "gradientLight";
+		backgroundColor: "dark" | "gradientDark" | "gradientLight" | "basic";
 	}>();
 </script>
 
