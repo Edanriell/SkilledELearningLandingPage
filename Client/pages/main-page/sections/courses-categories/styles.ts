@@ -19,7 +19,7 @@ export const CoursesCategoriesList = css({
 		flexWrap: "wrap",
 		rowGap: "5.6rem",
 		columnGap: "1rem",
-		alignItems: "center",
+		// alignItems: "center"
 		justifyContent: "center"
 	},
 	lg: {
@@ -45,7 +45,8 @@ export const CategoryTitleCard = css({
 	md: {
 		padding: "5.6rem 3.2rem 13.9rem 3.2rem",
 		width: "100%",
-		minWidth: "33rem"
+		minWidth: "33rem",
+		height: "100%"
 	},
 	lg: {
 		padding: "6.4rem 3.2rem auto 3.2rem",
@@ -77,7 +78,8 @@ export const CategoryCard = css({
 	md: {
 		padding: "5.6rem 2.2rem 3.2rem 3.2rem",
 		width: "100%",
-		minWidth: "33rem"
+		minWidth: "33rem",
+		height: "100%"
 	},
 	lg: {
 		padding: "6.4rem 3.2rem 4rem 3.2rem",
@@ -120,6 +122,7 @@ export const CategoryCardText = css({
 	lineHeight: "162%",
 	color: "var(--83869a)",
 	marginBottom: "2.4rem",
+	// marginBottom: "auto",
 	textAlign: "left",
 	lg: {
 		fontSize: "1.8rem",
