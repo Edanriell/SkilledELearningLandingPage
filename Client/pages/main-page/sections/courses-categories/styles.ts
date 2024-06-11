@@ -10,17 +10,36 @@ export const CoursesCategoriesList = css({
 	paddingBottom: "8rem",
 	display: "flex",
 	flexDirection: "column",
-	rowGap: "4rem"
+	rowGap: "4rem",
+	md: {
+		paddingLeft: "4rem",
+		paddingRight: "4rem",
+		paddingBottom: "8.6rem",
+		flexDirection: "row",
+		flexWrap: "wrap",
+		rowGap: "5.6rem",
+		columnGap: "1rem",
+		alignItems: "center",
+		justifyContent: "center"
+	}
 });
 
 export const CoursesCategoriesListItem = css({
-	position: "relative"
+	position: "relative",
+	md: {
+		flex: "1 1"
+	}
 });
 
 export const CategoryTitleCard = css({
 	borderRadius: "1rem",
 	background: "linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)",
-	padding: "2.4rem 2.8rem 3.2rem 2.8rem"
+	padding: "2.4rem 2.8rem 3.2rem 2.8rem",
+	md: {
+		padding: "5.6rem 3.2rem 13.9rem 3.2rem",
+		width: "100%",
+		minWidth: "33rem"
+	}
 });
 
 export const CategoryMainTitle = css({
@@ -39,7 +58,12 @@ export const CategoryCard = css({
 	display: "flex",
 	flexDirection: "column",
 	alignItems: "flex-start",
-	padding: "5.6rem 2.8rem 3.2rem 2.8rem"
+	padding: "5.6rem 2.8rem 3.2rem 2.8rem",
+	md: {
+		padding: "5.6rem 2.2rem 3.2rem 3.2rem",
+		width: "100%",
+		minWidth: "33rem"
+	}
 });
 
 export const CategoryCardIcon = css({
@@ -52,7 +76,10 @@ export const CategoryCardIcon = css({
 	left: "2.8rem",
 	display: "flex",
 	alignItems: "center",
-	justifyContent: "center"
+	justifyContent: "center",
+	md: {
+		left: "3.2rem"
+	}
 });
 
 export const CategoryCardSubtitle = css({
