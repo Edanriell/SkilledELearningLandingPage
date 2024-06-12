@@ -130,12 +130,3 @@ export const CategoryCardText = css({
 		marginBottom: "auto"
 	}
 });
-
-export const CategoryCardButton = css({
-	fontFamily: "var(--font-family)",
-	fontWeight: "700",
-	fontSize: "1.8rem",
-	lineHeight: "156%",
-	color: "var(--f74780)",
-	cursor: "pointer"
-});
