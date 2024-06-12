@@ -34,45 +34,37 @@
 		});
 
 		if (props.backgroundColor === "dark") {
-			gsap.set(buttonRef.value, {
-				background: "#13183f"
-			});
-
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				background: "#666ca3",
+				background: "#5c5edc",
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "gradientLight") {
 			gsap.set(buttonRef.value, {
-				background: "linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)"
+				background: "linear-gradient(360deg, #ff6f48 0%, #f02aa6 100%)"
 			});
 
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				background: "linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)",
-				opacity: 0.5,
+				background: "linear-gradient(180deg, #d16ba5 0%, #86a8e7 100%)",
+				// opacity: 0.5,
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "gradientDark") {
 			gsap.set(buttonRef.value, {
-				background: "linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)"
+				background: "linear-gradient(360deg, #4851ff 0%, #f02aa6 100%)"
 			});
 
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				background: "linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)",
-				opacity: 0.5,
+				background: "linear-gradient(180deg, #2a6cf0 0%, #fc67fa 100%)",
+				// opacity: 0.5,
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "basic") {
-			gsap.set(buttonRef.value, {
-				color: "#f74780"
-			});
-
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				color: "#ffa7c3",
+				color: "#d13d6b",
 				ease: "power2"
 			});
 		}
@@ -92,17 +84,25 @@
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "gradientLight") {
+			gsap.set(buttonRef.value, {
+				background: "linear-gradient(360deg, #d16ba5 0%, #86a8e7 100%)"
+			});
+
 			gsap.to(buttonRef.value, {
-				duration: 0.25,
+				duration: 0.5,
 				background: "linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)",
-				opacity: 1,
+				// opacity: 1,
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "gradientDark") {
+			gsap.set(buttonRef.value, {
+				background: "linear-gradient(360deg, #2a6cf0 0%, #fc67fa 100%)"
+			});
+
 			gsap.to(buttonRef.value, {
-				duration: 0.25,
+				duration: 0.5,
 				background: "linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)",
-				opacity: 1,
+				// opacity: 1,
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "basic") {
@@ -122,45 +122,37 @@
 		});
 
 		if (props.backgroundColor === "dark") {
-			gsap.set(buttonRef.value, {
-				background: "#13183f"
-			});
-
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				background: "#666ca3",
+				background: "#5c5edc",
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "gradientLight") {
 			gsap.set(buttonRef.value, {
-				background: "linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)"
+				background: "linear-gradient(360deg, #ff6f48 0%, #f02aa6 100%)"
 			});
 
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				background: "linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)",
-				opacity: 0.5,
+				background: "linear-gradient(180deg, #d16ba5 0%, #86a8e7 100%)",
+				// opacity: 0.5,
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "gradientDark") {
 			gsap.set(buttonRef.value, {
-				background: "linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)"
+				background: "linear-gradient(360deg, #4851ff 0%, #f02aa6 100%)"
 			});
 
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				background: "linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)",
-				opacity: 0.5,
+				background: "linear-gradient(180deg, #2a6cf0 0%, #fc67fa 100%)",
+				// opacity: 0.5,
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "basic") {
-			gsap.set(buttonRef.value, {
-				color: "#f74780"
-			});
-
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				color: "#ffa7c3",
+				color: "#d13d6b",
 				ease: "power2"
 			});
 		}
@@ -180,17 +172,25 @@
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "gradientLight") {
+			gsap.set(buttonRef.value, {
+				background: "linear-gradient(360deg, #d16ba5 0%, #86a8e7 100%)"
+			});
+
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				opacity: 1,
 				background: "linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)",
+				// opacity: 1,
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "gradientDark") {
+			gsap.set(buttonRef.value, {
+				background: "linear-gradient(360deg, #2a6cf0 0%, #fc67fa 100%)"
+			});
+
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
 				background: "linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)",
-				opacity: 1,
+				// opacity: 1,
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "basic") {
