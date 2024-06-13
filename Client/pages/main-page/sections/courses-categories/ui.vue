@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+	import { gsap } from "gsap";
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
+	import { onMounted, ref } from "vue";
+
 	import { Button } from "@shared/ui";
 
 	import {
@@ -12,11 +16,35 @@
 		CoursesCategoriesList,
 		CoursesCategoriesListItem
 	} from "./styles";
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	const coursesCategoriesListRef = ref(null);
+
+	onMounted(() => {
+		gsap.fromTo(
+			(coursesCategoriesListRef.value as unknown as HTMLUListElement).children,
+			{
+				scrollTrigger: (coursesCategoriesListRef.value as unknown as HTMLUListElement).children,
+				y: -25,
+				opacity: 0
+			},
+			{
+				scrollTrigger: (coursesCategoriesListRef.value as unknown as HTMLUListElement).children,
+				y: 0,
+				opacity: 1,
+				ease: "power1.inOut",
+				duration: 0.25,
+				delay: 0.25,
+				stagger: 0.15
+			}
+		);
+	});
 </script>
 
 <template>
 	<section :class="CoursesCategories">
-		<ul :class="CoursesCategoriesList">
+		<ul ref="coursesCategoriesListRef" :class="CoursesCategoriesList">
 			<li :class="CoursesCategoriesListItem">
 				<article :class="CategoryTitleCard">
 					<h2 :class="CategoryMainTitle">Check out our most popular courses!</h2>

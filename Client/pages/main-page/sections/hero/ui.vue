@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+	import { gsap } from "gsap";
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
+	import { onMounted, ref } from "vue";
+
 	import { Button } from "@shared/ui";
 
 	import {
@@ -19,11 +23,52 @@
 		statisticsHours,
 		statisticsMembers
 	} from "./styles";
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	const heroContentRef = ref(null);
+	const heroStatisticsRef = ref(null);
+
+	onMounted(() => {
+		gsap.fromTo(
+			heroContentRef.value,
+			{
+				scrollTrigger: heroContentRef.value,
+				x: -25,
+				opacity: 0
+			},
+			{
+				scrollTrigger: heroContentRef.value,
+				x: 0,
+				opacity: 1,
+				ease: "power1.inOut",
+				duration: 0.25,
+				delay: 0.25
+			}
+		);
+
+		gsap.fromTo(
+			heroStatisticsRef.value,
+			{
+				scrollTrigger: heroStatisticsRef.value,
+				x: 25,
+				opacity: 0
+			},
+			{
+				scrollTrigger: heroStatisticsRef.value,
+				opacity: 1,
+				x: 0,
+				ease: "power1.inOut",
+				duration: 0.25,
+				delay: 0.25
+			}
+		);
+	});
 </script>
 
 <template>
 	<section :class="hero">
-		<div :class="heroContent">
+		<div ref="heroContentRef" :class="heroContent">
 			<h2 :class="heroTitle">Maximize skill, minimize budget</h2>
 			<p :class="heroText">
 				Our modern courses across a range of in-demand skills will give you the knowledge you need
@@ -33,7 +78,7 @@
 				<Button background-color="gradientLight">Get Started</Button>
 			</div>
 		</div>
-		<div :class="heroStatistics">
+		<div ref="heroStatisticsRef" :class="heroStatistics">
 			<div :class="heroStatisticsImage">
 				<div :class="heroImageContainer">
 					<picture>

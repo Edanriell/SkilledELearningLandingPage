@@ -36,7 +36,7 @@
 		if (props.backgroundColor === "dark") {
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				background: "#5c5edc",
+				background: "#666ca3",
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "gradientLight") {
@@ -124,7 +124,7 @@
 		if (props.backgroundColor === "dark") {
 			gsap.to(buttonRef.value, {
 				duration: 0.25,
-				background: "#5c5edc",
+				background: "#666ca3",
 				ease: "power2"
 			});
 		} else if (props.backgroundColor === "gradientLight") {
