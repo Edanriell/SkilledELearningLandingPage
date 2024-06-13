@@ -6,6 +6,8 @@ export const hero = css({
 	paddingBottom: "9rem",
 	position: "relative",
 	zIndex: "1",
+	// overflowX: "auto",
+	// overflowY: "auto",
 	md: {
 		paddingTop: "2.6rem",
 		paddingBottom: "16.1rem",

@@ -1,5 +1,6 @@
 import { css } from "@styled-system/css";
 
 export const main = css({
-	backgroundColor: "var(--ffffff)"
+	backgroundColor: "var(--ffffff)",
+	overflow: "hidden"
 });
